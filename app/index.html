@@ -16,23 +16,23 @@
     <header class="hero">
       <div class="hero__content">
         <p class="hero__kicker">Constitutional Rights, Clearly Explained</p>
-        <h1>Understand what the Constitution guarantees—paired with the Supreme Court cases that define it.</h1>
+        <h1>Start with the Preamble, then explore the rights and structure that shape U.S. law today.</h1>
         <p class="hero__subhead">
-          Browse the most consequential rights, read plain-language summaries, and see the landmark Supreme Court rulings that
-          shape how those rights apply today.
+          Browse constitutional guarantees in order, read plain-language summaries, and see the landmark Supreme Court rulings that
+          define how those provisions are applied.
         </p>
         <div class="hero__actions">
-          <input id="searchInput" type="search" placeholder="Search rights, amendments, or cases" aria-label="Search rights" />
+          <input id="searchInput" type="search" placeholder="Search provisions, amendments, or cases" aria-label="Search rights" />
           <button id="clearSearch" type="button">Clear</button>
         </div>
         <div class="hero__stats">
           <div>
-            <span id="rightsCount">0</span>
-            <p>Core constitutional rights</p>
+            <span id="structureCount">0</span>
+            <p>Governmental structure entries</p>
           </div>
           <div>
-            <span id="casesCount">0</span>
-            <p>Landmark Supreme Court cases</p>
+            <span id="rightsCount">0</span>
+            <p>Constitutional rights entries</p>
           </div>
         </div>
       </div>
@@ -40,12 +40,8 @@
 
     <main>
       <section class="filters" aria-label="Rights filters">
-        <button class="filter-button is-active" data-filter="all">All rights</button>
-        <button class="filter-button" data-filter="freedom">Freedom & expression</button>
-        <button class="filter-button" data-filter="justice">Criminal justice</button>
-        <button class="filter-button" data-filter="privacy">Privacy & autonomy</button>
-        <button class="filter-button" data-filter="equality">Equality & voting</button>
-        <button class="filter-button" data-filter="structure">Federal structure</button>
+        <button class="filter-button is-active" data-filter="structure">Governmental structure</button>
+        <button class="filter-button" data-filter="rights">Constitutional rights</button>
       </section>
 
       <section id="rightsGrid" class="rights-grid" aria-live="polite"></section>

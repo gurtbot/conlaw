@@ -1,9 +1,175 @@
 const rightsData = [
   {
+    id: "preamble",
+    title: "Preamble",
+    provision: "We the People",
+    category: "structure",
+    summary:
+      "Sets the Constitution's purposes: forming a more perfect union, establishing justice, ensuring domestic tranquility, providing for defense, promoting general welfare, and securing liberty.",
+    guarantees: [
+      "Explains the Constitution's goals and foundational principles.",
+      "Frames the authority of the Constitution as coming from the people."
+    ],
+    cases: []
+  },
+  {
+    id: "article-i",
+    title: "Legislative powers and limits",
+    provision: "Article I",
+    category: "structure",
+    summary:
+      "Establishes Congress, outlines lawmaking powers, and lists enumerated federal authority including taxation, spending, and regulation of commerce.",
+    guarantees: [
+      "Congress holds legislative power and may only act within enumerated powers.",
+      "The House and Senate must follow specific procedures to pass laws."
+    ],
+    cases: [
+      {
+        name: "McCulloch v. Maryland",
+        year: 1819,
+        holding: "Congress has implied powers to carry out enumerated authority and states cannot tax federal institutions.",
+        citation: "17 U.S. (4 Wheat.) 316"
+      },
+      {
+        name: "United States v. Lopez",
+        year: 1995,
+        holding: "Congress exceeded its Commerce Clause authority by criminalizing gun possession in school zones.",
+        citation: "514 U.S. 549"
+      },
+      {
+        name: "NFIB v. Sebelius",
+        year: 2012,
+        holding: "Congress cannot compel individuals to engage in commerce under the Commerce Clause.",
+        citation: "567 U.S. 519"
+      }
+    ]
+  },
+  {
+    id: "article-ii",
+    title: "Executive power and accountability",
+    provision: "Article II",
+    category: "structure",
+    summary:
+      "Creates the presidency, vests executive power, and defines duties such as enforcing laws, commanding the military, and appointing officials.",
+    guarantees: [
+      "The President must faithfully execute the laws.",
+      "Appointments and treaties require Senate advice and consent."
+    ],
+    cases: [
+      {
+        name: "Youngstown Sheet & Tube Co. v. Sawyer",
+        year: 1952,
+        holding: "The President cannot seize private property without congressional authorization.",
+        citation: "343 U.S. 579"
+      },
+      {
+        name: "United States v. Nixon",
+        year: 1974,
+        holding: "Executive privilege is limited and cannot block a criminal subpoena.",
+        citation: "418 U.S. 683"
+      }
+    ]
+  },
+  {
+    id: "article-iii",
+    title: "Judicial power and review",
+    provision: "Article III",
+    category: "structure",
+    summary:
+      "Establishes the federal judiciary and vests judicial power in the Supreme Court and lower federal courts.",
+    guarantees: [
+      "Federal courts interpret the Constitution and federal law.",
+      "Judges hold office during good behavior to protect independence."
+    ],
+    cases: [
+      {
+        name: "Marbury v. Madison",
+        year: 1803,
+        holding: "Confirmed the Supreme Court's power of judicial review.",
+        citation: "5 U.S. (1 Cranch) 137"
+      },
+      {
+        name: "Cooper v. Aaron",
+        year: 1958,
+        holding: "States are bound by Supreme Court decisions interpreting the Constitution.",
+        citation: "358 U.S. 1"
+      }
+    ]
+  },
+  {
+    id: "article-iv",
+    title: "States, full faith and credit, and federalism",
+    provision: "Article IV",
+    category: "structure",
+    summary:
+      "Governs relationships among states, including recognition of laws, privileges and immunities, and admission of new states.",
+    guarantees: [
+      "States must generally recognize public acts and judicial proceedings of other states.",
+      "Citizens are entitled to privileges and immunities when traveling between states."
+    ],
+    cases: [
+      {
+        name: "Saenz v. Roe",
+        year: 1999,
+        holding: "States cannot restrict welfare benefits based on how long a person has lived in the state.",
+        citation: "526 U.S. 489"
+      }
+    ]
+  },
+  {
+    id: "article-v",
+    title: "Amendment process",
+    provision: "Article V",
+    category: "structure",
+    summary:
+      "Defines how the Constitution can be amended by Congress and the states.",
+    guarantees: [
+      "Amendments require supermajority approval by Congress and the states.",
+      "States can propose amendments through a convention process."
+    ],
+    cases: [
+      {
+        name: "Coleman v. Miller",
+        year: 1939,
+        holding: "Questions about the timeliness of ratification are largely political, not judicial.",
+        citation: "307 U.S. 433"
+      }
+    ]
+  },
+  {
+    id: "article-vi",
+    title: "Supremacy Clause and oaths",
+    provision: "Article VI",
+    category: "structure",
+    summary:
+      "Declares the Constitution and federal law supreme and requires officials to swear an oath to support it.",
+    guarantees: [
+      "Federal law prevails over conflicting state law.",
+      "Religious tests for public office are prohibited."
+    ],
+    cases: [
+      {
+        name: "McCulloch v. Maryland",
+        year: 1819,
+        holding: "States cannot impede valid federal law through taxation.",
+        citation: "17 U.S. (4 Wheat.) 316"
+      }
+    ]
+  },
+  {
+    id: "article-vii",
+    title: "Ratification",
+    provision: "Article VII",
+    category: "structure",
+    summary: "Explains how the Constitution would take effect after ratification by the states.",
+    guarantees: ["Requires approval by nine states to establish the Constitution."],
+    cases: []
+  },
+  {
     id: "first-amendment",
     title: "Freedom of speech, press, religion, assembly, and petition",
     provision: "First Amendment",
-    category: "freedom",
+    category: "rights",
     summary:
       "Protects expressive activity and religious liberty, limiting government ability to suppress speech, control religious exercise, or penalize peaceful assembly.",
     guarantees: [
@@ -36,7 +202,7 @@ const rightsData = [
     id: "second-amendment",
     title: "Right to keep and bear arms",
     provision: "Second Amendment",
-    category: "freedom",
+    category: "rights",
     summary:
       "Protects an individual right to possess firearms for lawful purposes such as self-defense, while allowing some regulation.",
     guarantees: [
@@ -59,10 +225,27 @@ const rightsData = [
     ]
   },
   {
+    id: "third-amendment",
+    title: "Quartering of soldiers",
+    provision: "Third Amendment",
+    category: "rights",
+    summary:
+      "Prohibits the government from forcing people to house soldiers in private homes during peacetime without consent.",
+    guarantees: ["Soldiers cannot be quartered in private homes without consent during peacetime."],
+    cases: [
+      {
+        name: "Engblom v. Carey",
+        year: 1982,
+        holding: "The Third Amendment applies to states through the Fourteenth Amendment.",
+        citation: "677 F.2d 957"
+      }
+    ]
+  },
+  {
     id: "fourth-amendment",
     title: "Protection against unreasonable searches and seizures",
     provision: "Fourth Amendment",
-    category: "privacy",
+    category: "rights",
     summary:
       "Requires government to justify searches and seizures, often with a warrant supported by probable cause.",
     guarantees: [
@@ -94,7 +277,7 @@ const rightsData = [
     id: "fifth-amendment",
     title: "Due process, self-incrimination, and just compensation",
     provision: "Fifth Amendment",
-    category: "justice",
+    category: "rights",
     summary:
       "Guarantees procedural protections in criminal cases, including the right to remain silent and the requirement of due process.",
     guarantees: [
@@ -121,7 +304,7 @@ const rightsData = [
     id: "sixth-amendment",
     title: "Right to counsel and a fair criminal trial",
     provision: "Sixth Amendment",
-    category: "justice",
+    category: "rights",
     summary:
       "Ensures criminal defendants receive a speedy, public trial with an impartial jury, counsel, and the ability to confront witnesses.",
     guarantees: [
@@ -145,10 +328,27 @@ const rightsData = [
     ]
   },
   {
+    id: "seventh-amendment",
+    title: "Civil jury trials",
+    provision: "Seventh Amendment",
+    category: "rights",
+    summary:
+      "Preserves the right to a jury trial in certain civil cases and limits reexamination of facts found by a jury.",
+    guarantees: ["Civil litigants retain the right to a jury trial in suits at common law."],
+    cases: [
+      {
+        name: "Tull v. United States",
+        year: 1987,
+        holding: "Defendants are entitled to a jury trial on liability in suits seeking civil penalties.",
+        citation: "481 U.S. 412"
+      }
+    ]
+  },
+  {
     id: "eighth-amendment",
     title: "Protection against cruel and unusual punishment",
     provision: "Eighth Amendment",
-    category: "justice",
+    category: "rights",
     summary:
       "Limits the severity of criminal punishment, prohibiting cruel and unusual punishment and excessive bail or fines.",
     guarantees: [
@@ -171,10 +371,43 @@ const rightsData = [
     ]
   },
   {
+    id: "ninth-amendment",
+    title: "Unenumerated rights",
+    provision: "Ninth Amendment",
+    category: "rights",
+    summary:
+      "Clarifies that listing certain rights in the Constitution does not deny other rights retained by the people.",
+    guarantees: ["The people retain rights not expressly listed in the Constitution."],
+    cases: [
+      {
+        name: "Griswold v. Connecticut",
+        year: 1965,
+        holding: "Recognized privacy protections derived from the Bill of Rights.",
+        citation: "381 U.S. 479"
+      }
+    ]
+  },
+  {
+    id: "tenth-amendment",
+    title: "Reserved powers",
+    provision: "Tenth Amendment",
+    category: "rights",
+    summary: "Reserves to the states or the people powers not delegated to the federal government.",
+    guarantees: ["Federal power is limited to what is delegated in the Constitution."],
+    cases: [
+      {
+        name: "Printz v. United States",
+        year: 1997,
+        holding: "Congress cannot commandeer state officials to carry out federal law.",
+        citation: "521 U.S. 898"
+      }
+    ]
+  },
+  {
     id: "fourteenth-amendment",
     title: "Equal protection and due process",
     provision: "Fourteenth Amendment",
-    category: "equality",
+    category: "rights",
     summary:
       "Requires states to provide equal protection of the laws and extends due process protections against state action.",
     guarantees: [
@@ -206,7 +439,7 @@ const rightsData = [
     id: "voting-rights",
     title: "Voting rights and democratic participation",
     provision: "Fifteenth, Nineteenth, Twenty-Fourth, Twenty-Sixth Amendments",
-    category: "equality",
+    category: "rights",
     summary:
       "Prohibits denying the right to vote based on race, sex, failure to pay poll taxes, or age for citizens 18 and older.",
     guarantees: [
@@ -229,54 +462,22 @@ const rightsData = [
         citation: "383 U.S. 663"
       }
     ]
-  },
-  {
-    id: "commerce-power",
-    title: "Limits on federal power and the Commerce Clause",
-    provision: "Article I, Section 8",
-    category: "structure",
-    summary:
-      "Defines Congress's enumerated powers and sets limits on federal authority over local activity.",
-    guarantees: [
-      "Congress can regulate interstate commerce but faces limits on purely local, non-economic activity.",
-      "Federalism principles preserve state sovereignty in areas beyond enumerated powers."
-    ],
-    cases: [
-      {
-        name: "McCulloch v. Maryland",
-        year: 1819,
-        holding: "Congress has implied powers and states cannot tax federal institutions.",
-        citation: "17 U.S. (4 Wheat.) 316"
-      },
-      {
-        name: "United States v. Lopez",
-        year: 1995,
-        holding: "Congress exceeded its Commerce Clause authority by criminalizing gun possession in school zones.",
-        citation: "514 U.S. 549"
-      },
-      {
-        name: "NFIB v. Sebelius",
-        year: 2012,
-        holding: "Congress cannot compel individuals to engage in commerce under the Commerce Clause.",
-        citation: "567 U.S. 519"
-      }
-    ]
   }
 ];
 
 const searchInput = document.getElementById("searchInput");
 const clearSearch = document.getElementById("clearSearch");
 const rightsGrid = document.getElementById("rightsGrid");
+const structureCount = document.getElementById("structureCount");
 const rightsCount = document.getElementById("rightsCount");
-const casesCount = document.getElementById("casesCount");
 const filterButtons = document.querySelectorAll(".filter-button");
 
 const state = {
-  filter: "all",
+  filter: "structure",
   query: ""
 };
 
-const countCases = () => rightsData.reduce((total, right) => total + right.cases.length, 0);
+const countByCategory = (category) => rightsData.filter((right) => right.category === category).length;
 
 const createCaseList = (cases) =>
   cases
@@ -291,13 +492,12 @@ const createCaseList = (cases) =>
     )
     .join("");
 
-const createGuarantees = (guarantees) =>
-  guarantees.map((item) => `<li>${item}</li>`).join("");
+const createGuarantees = (guarantees) => guarantees.map((item) => `<li>${item}</li>`).join("");
 
 const renderRights = () => {
   const normalizedQuery = state.query.trim().toLowerCase();
   const filtered = rightsData.filter((right) => {
-    const matchesFilter = state.filter === "all" || right.category === state.filter;
+    const matchesFilter = right.category === state.filter;
     const matchesQuery =
       normalizedQuery === "" ||
       right.title.toLowerCase().includes(normalizedQuery) ||
@@ -325,7 +525,7 @@ const renderRights = () => {
           <div class="right-card__section">
             <h3>Key Supreme Court cases</h3>
             <ol>
-              ${createCaseList(right.cases)}
+              ${right.cases.length ? createCaseList(right.cases) : "<li>No landmark Supreme Court cases listed.</li>"}
             </ol>
           </div>
         </article>
@@ -334,13 +534,13 @@ const renderRights = () => {
     .join("");
 
   if (filtered.length === 0) {
-    rightsGrid.innerHTML = `<div class="empty-state">No rights matched your search. Try another keyword.</div>`;
+    rightsGrid.innerHTML = `<div class="empty-state">No provisions matched your search. Try another keyword.</div>`;
   }
 };
 
 const updateCounts = () => {
-  rightsCount.textContent = rightsData.length;
-  casesCount.textContent = countCases();
+  structureCount.textContent = countByCategory("structure");
+  rightsCount.textContent = countByCategory("rights");
 };
 
 searchInput.addEventListener("input", (event) => {
