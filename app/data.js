@@ -4,6 +4,7 @@ const provisions = [
     title: "Preamble",
     provision: "Preamble",
     category: "structure",
+    type: "preamble",
     fullText: `We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.`,
     summary:
       "Sets the Constitution's purposes: forming a more perfect union, establishing justice, ensuring domestic tranquility, providing for defense, promoting general welfare, and securing liberty.",
@@ -19,6 +20,7 @@ const provisions = [
     title: "Legislative Powers",
     provision: "Article I",
     category: "structure",
+    type: "article",
     fullText: `Section 1. All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.
 
 Section 2. The House of Representatives shall be composed of Members chosen every second Year by the People of the several States, and the Electors in each State shall have the Qualifications requisite for Electors of the most numerous Branch of the State Legislature.
@@ -134,18 +136,21 @@ No State shall, without the Consent of Congress, lay any Duty of Tonnage, keep T
       {
         name: "McCulloch v. Maryland",
         year: 1819,
+        topic: "Necessary and Proper Clause",
         holding: "Congress has implied powers to carry out enumerated authority and states cannot tax federal institutions.",
         citation: "17 U.S. (4 Wheat.) 316"
       },
       {
         name: "United States v. Lopez",
         year: 1995,
+        topic: "Commerce Clause",
         holding: "Congress exceeded its Commerce Clause authority by criminalizing gun possession in school zones.",
         citation: "514 U.S. 549"
       },
       {
         name: "NFIB v. Sebelius",
         year: 2012,
+        topic: "Commerce Clause",
         holding: "Congress cannot compel individuals to engage in commerce under the Commerce Clause.",
         citation: "567 U.S. 519"
       }
@@ -157,6 +162,7 @@ No State shall, without the Consent of Congress, lay any Duty of Tonnage, keep T
     title: "Executive Power",
     provision: "Article II",
     category: "structure",
+    type: "article",
     fullText: `Section 1. The executive Power shall be vested in a President of the United States of America. He shall hold his Office during the Term of four Years, and, together with the Vice President, chosen for the same Term, be elected, as follows:
 
 Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress: but no Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be appointed an Elector.
@@ -192,12 +198,14 @@ Section 4. The President, Vice President and all civil Officers of the United St
       {
         name: "Youngstown Sheet & Tube Co. v. Sawyer",
         year: 1952,
+        topic: "Separation of Powers",
         holding: "The President cannot seize private property without congressional authorization.",
         citation: "343 U.S. 579"
       },
       {
         name: "United States v. Nixon",
         year: 1974,
+        topic: "Executive Privilege",
         holding: "Executive privilege is limited and cannot block a criminal subpoena.",
         citation: "418 U.S. 683"
       }
@@ -209,6 +217,7 @@ Section 4. The President, Vice President and all civil Officers of the United St
     title: "Judicial Power",
     provision: "Article III",
     category: "structure",
+    type: "article",
     fullText: `Section 1. The judicial Power of the United States, shall be vested in one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish. The Judges, both of the supreme and inferior Courts, shall hold their Offices during good Behaviour, and shall, at stated Times, receive for their Services, a Compensation, which shall not be diminished during their Continuance in Office.
 
 Section 2. The judicial Power shall extend to all Cases, in Law and Equity, arising under this Constitution, the Laws of the United States, and Treaties made, or which shall be made, under their Authority;—to all Cases affecting Ambassadors, other public Ministers and Consuls;—to all Cases of admiralty and maritime Jurisdiction;—to Controversies to which the United States shall be a Party;—to Controversies between two or more States;—between a State and Citizens of another State;—between Citizens of different States;—between Citizens of the same State claiming Lands under Grants of different States, and between a State, or the Citizens thereof, and foreign States, Citizens or Subjects.
@@ -230,12 +239,14 @@ The Congress shall have Power to declare the Punishment of Treason, but no Attai
       {
         name: "Marbury v. Madison",
         year: 1803,
+        topic: "Judicial Review",
         holding: "Confirmed the Supreme Court's power of judicial review.",
         citation: "5 U.S. (1 Cranch) 137"
       },
       {
         name: "Cooper v. Aaron",
         year: 1958,
+        topic: "Supremacy of Court Decisions",
         holding: "States are bound by Supreme Court decisions interpreting the Constitution.",
         citation: "358 U.S. 1"
       }
@@ -247,6 +258,7 @@ The Congress shall have Power to declare the Punishment of Treason, but no Attai
     title: "States and Federalism",
     provision: "Article IV",
     category: "structure",
+    type: "article",
     fullText: `Section 1. Full Faith and Credit shall be given in each State to the public Acts, Records, and judicial Proceedings of every other State. And the Congress may by general Laws prescribe the Manner in which such Acts, Records and Proceedings shall be proved, and the Effect thereof.
 
 Section 2. The Citizens of each State shall be entitled to all Privileges and Immunities of Citizens in the several States.
@@ -270,6 +282,7 @@ Section 4. The United States shall guarantee to every State in this Union a Repu
       {
         name: "Saenz v. Roe",
         year: 1999,
+        topic: "Right to Travel",
         holding: "States cannot restrict welfare benefits based on how long a person has lived in the state.",
         citation: "526 U.S. 489"
       }
@@ -281,6 +294,7 @@ Section 4. The United States shall guarantee to every State in this Union a Repu
     title: "Amendment Process",
     provision: "Article V",
     category: "structure",
+    type: "article",
     fullText: `The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate.`,
     summary: "Defines how the Constitution can be amended by Congress and the states.",
     guarantees: [
@@ -291,6 +305,7 @@ Section 4. The United States shall guarantee to every State in this Union a Repu
       {
         name: "Coleman v. Miller",
         year: 1939,
+        topic: "Ratification Deadlines",
         holding: "Questions about the timeliness of ratification are largely political, not judicial.",
         citation: "307 U.S. 433"
       }
@@ -302,6 +317,7 @@ Section 4. The United States shall guarantee to every State in this Union a Repu
     title: "Supremacy Clause and Oaths",
     provision: "Article VI",
     category: "structure",
+    type: "article",
     fullText: `All Debts contracted and Engagements entered into, before the Adoption of this Constitution, shall be as valid against the United States under this Constitution, as under the Confederation.
 
 This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding.
@@ -317,6 +333,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "McCulloch v. Maryland",
         year: 1819,
+        topic: "Supremacy Clause",
         holding: "States cannot impede valid federal law through taxation.",
         citation: "17 U.S. (4 Wheat.) 316"
       }
@@ -328,6 +345,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Ratification",
     provision: "Article VII",
     category: "structure",
+    type: "article",
     fullText: `The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.`,
     summary: "Explains how the Constitution would take effect after ratification by the states.",
     guarantees: ["Requires approval by nine states to establish the Constitution."],
@@ -339,6 +357,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Freedom of speech, press, religion, assembly, and petition",
     provision: "First Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.`,
     summary:
       "Protects expressive activity and religious liberty, limiting government ability to suppress speech, control religious exercise, or penalize peaceful assembly.",
@@ -351,18 +370,21 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Brandenburg v. Ohio",
         year: 1969,
+        topic: "Incitement",
         holding: "Speech advocating violence is protected unless it is intended and likely to incite imminent lawless action.",
         citation: "395 U.S. 444"
       },
       {
         name: "New York Times Co. v. United States",
         year: 1971,
+        topic: "Prior Restraint",
         holding: "The government faces a heavy burden to justify prior restraints on publication.",
         citation: "403 U.S. 713"
       },
       {
         name: "Tinker v. Des Moines Independent Community School District",
         year: 1969,
+        topic: "Student Speech",
         holding: "Students do not shed constitutional rights at the schoolhouse gate absent material disruption.",
         citation: "393 U.S. 503"
       }
@@ -374,6 +396,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Right to keep and bear arms",
     provision: "Second Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.`,
     summary: "Protects an individual right to possess firearms for lawful purposes such as self-defense, while allowing some regulation.",
     guarantees: [
@@ -384,12 +407,14 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "District of Columbia v. Heller",
         year: 2008,
+        topic: "Individual Right to Arms",
         holding: "Recognized an individual right to possess a handgun in the home for self-defense.",
         citation: "554 U.S. 570"
       },
       {
         name: "McDonald v. City of Chicago",
         year: 2010,
+        topic: "Incorporation",
         holding: "Applied the Second Amendment to state and local governments through the Fourteenth Amendment.",
         citation: "561 U.S. 742"
       }
@@ -401,6 +426,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Quartering of soldiers",
     provision: "Third Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.`,
     summary: "Prohibits the government from forcing people to house soldiers in private homes during peacetime without consent.",
     guarantees: ["Soldiers cannot be quartered in private homes without consent during peacetime."],
@@ -408,6 +434,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Engblom v. Carey",
         year: 1982,
+        topic: "Third Amendment Incorporation",
         holding: "The Third Amendment applies to states through the Fourteenth Amendment.",
         citation: "677 F.2d 957"
       }
@@ -419,6 +446,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Protection against unreasonable searches and seizures",
     provision: "Fourth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.`,
     summary: "Requires government to justify searches and seizures, often with a warrant supported by probable cause.",
     guarantees: [
@@ -429,18 +457,21 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Katz v. United States",
         year: 1967,
+        topic: "Reasonable Expectation of Privacy",
         holding: "The Fourth Amendment protects people, not places, and applies when there is a reasonable expectation of privacy.",
         citation: "389 U.S. 347"
       },
       {
         name: "Mapp v. Ohio",
         year: 1961,
+        topic: "Exclusionary Rule",
         holding: "Evidence obtained in violation of the Fourth Amendment is generally inadmissible in state courts.",
         citation: "367 U.S. 643"
       },
       {
         name: "Carpenter v. United States",
         year: 2018,
+        topic: "Digital Privacy",
         holding: "Accessing historical cell-site location data generally requires a warrant.",
         citation: "585 U.S. 296"
       }
@@ -452,6 +483,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Due process, self-incrimination, and just compensation",
     provision: "Fifth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.`,
     summary: "Guarantees procedural protections in criminal cases, including the right to remain silent and the requirement of due process.",
     guarantees: [
@@ -463,12 +495,14 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Miranda v. Arizona",
         year: 1966,
+        topic: "Self-Incrimination",
         holding: "Police must advise suspects of their rights before custodial interrogation.",
         citation: "384 U.S. 436"
       },
       {
         name: "Kelo v. City of New London",
         year: 2005,
+        topic: "Takings Clause",
         holding: "Economic development can qualify as a public use under the Takings Clause.",
         citation: "545 U.S. 469"
       }
@@ -480,6 +514,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Right to counsel and a fair criminal trial",
     provision: "Sixth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.`,
     summary:
       "Ensures criminal defendants receive a speedy, public trial with an impartial jury, counsel, and the ability to confront witnesses.",
@@ -492,12 +527,14 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Gideon v. Wainwright",
         year: 1963,
+        topic: "Right to Counsel",
         holding: "States must provide counsel to indigent defendants charged with serious offenses.",
         citation: "372 U.S. 335"
       },
       {
         name: "Crawford v. Washington",
         year: 2004,
+        topic: "Confrontation Clause",
         holding: "Testimonial statements are inadmissible unless the witness is unavailable and the defendant had a prior opportunity to cross-examine.",
         citation: "541 U.S. 36"
       }
@@ -509,6 +546,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Civil jury trials",
     provision: "Seventh Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.`,
     summary: "Preserves the right to a jury trial in certain civil cases and limits reexamination of facts found by a jury.",
     guarantees: ["Civil litigants retain the right to a jury trial in suits at common law."],
@@ -516,6 +554,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Tull v. United States",
         year: 1987,
+        topic: "Civil Jury Trial",
         holding: "Defendants are entitled to a jury trial on liability in suits seeking civil penalties.",
         citation: "481 U.S. 412"
       }
@@ -527,6 +566,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Protection against cruel and unusual punishment",
     provision: "Eighth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.`,
     summary: "Limits the severity of criminal punishment, prohibiting cruel and unusual punishment and excessive bail or fines.",
     guarantees: ["Punishment must be proportionate to the offense.", "Bail and fines cannot be excessive."],
@@ -534,12 +574,14 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Furman v. Georgia",
         year: 1972,
+        topic: "Death Penalty",
         holding: "The death penalty as applied then was arbitrary and violated the Eighth Amendment.",
         citation: "408 U.S. 238"
       },
       {
         name: "Miller v. Alabama",
         year: 2012,
+        topic: "Juvenile Sentencing",
         holding: "Mandatory life without parole for juveniles is unconstitutional.",
         citation: "567 U.S. 460"
       }
@@ -551,6 +593,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Unenumerated rights",
     provision: "Ninth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people.`,
     summary: "Clarifies that listing certain rights in the Constitution does not deny other rights retained by the people.",
     guarantees: ["The people retain rights not expressly listed in the Constitution."],
@@ -558,6 +601,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Griswold v. Connecticut",
         year: 1965,
+        topic: "Privacy Rights",
         holding: "Recognized privacy protections derived from the Bill of Rights.",
         citation: "381 U.S. 479"
       }
@@ -569,6 +613,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Reserved powers",
     provision: "Tenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.`,
     summary: "Reserves to the states or the people powers not delegated to the federal government.",
     guarantees: ["Federal power is limited to what is delegated in the Constitution."],
@@ -576,6 +621,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
       {
         name: "Printz v. United States",
         year: 1997,
+        topic: "Anti-Commandeering",
         holding: "Congress cannot commandeer state officials to carry out federal law.",
         citation: "521 U.S. 898"
       }
@@ -587,6 +633,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Sovereign immunity",
     provision: "Eleventh Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The Judicial power of the United States shall not be construed to extend to any suit in law or equity, commenced or prosecuted against one of the United States by Citizens of another State, or by Citizens or Subjects of any Foreign State.`,
     summary: "Limits federal judicial power by recognizing state sovereign immunity from certain suits.",
     guarantees: ["States are generally immune from suits by citizens of other states or foreign citizens in federal court."],
@@ -598,6 +645,7 @@ The Senators and Representatives before mentioned, and the Members of the severa
     title: "Election of President and Vice President",
     provision: "Twelfth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The Electors shall meet in their respective states, and vote by ballot for President and Vice-President, one of whom, at least, shall not be an inhabitant of the same state with themselves; they shall name in their ballots the person voted for as President, and in distinct ballots the person voted for as Vice-President, and they shall make distinct lists of all persons voted for as President, and of all persons voted for as Vice-President and of the number of votes for each, which lists they shall sign and certify, and transmit sealed to the seat of the government of the United States, directed to the President of the Senate;—The President of the Senate shall, in the presence of the Senate and House of Representatives, open all the certificates and the votes shall then be counted;—The person having the greatest number of votes for President, shall be the President, if such number be a majority of the whole number of Electors appointed; and if no person have such majority, then from the persons having the highest numbers not exceeding three on the list of those voted for as President, the House of Representatives shall choose immediately, by ballot, the President. But in choosing the President, the votes shall be taken by states, the representation from each state having one vote; a quorum for this purpose shall consist of a member or members from two-thirds of the states, and a majority of all the states shall be necessary to a choice. And if the House of Representatives shall not choose a President whenever the right of choice shall devolve upon them, before the fourth day of March next following, then the Vice-President shall act as President, as in the case of the death or other constitutional disability of the President.
 
 The person having the greatest number of votes as Vice-President, shall be the Vice-President, if such number be a majority of the whole number of Electors appointed, and if no person have a majority, then from the two highest numbers on the list, the Senate shall choose the Vice-President; a quorum for the purpose shall consist of two-thirds of the whole number of Senators, and a majority of the whole number shall be necessary to a choice.
@@ -613,6 +661,7 @@ But no person constitutionally ineligible to the office of President shall be el
     title: "Abolition of slavery",
     provision: "Thirteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. Neither slavery nor involuntary servitude, except as a punishment for crime whereof the party shall have been duly convicted, shall exist within the United States, or any place subject to their jurisdiction.
 
 Section 2. Congress shall have power to enforce this article by appropriate legislation.`,
@@ -626,6 +675,7 @@ Section 2. Congress shall have power to enforce this article by appropriate legi
     title: "Citizenship, due process, and equal protection",
     provision: "Fourteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.
 
 Section 2. Representatives shall be apportioned among the several States according to their respective numbers, counting the whole number of persons in each State, excluding Indians not taxed. But when the right to vote at any election for the choice of electors for President and Vice President of the United States, Representatives in Congress, the Executive and Judicial officers of a State, or the members of the Legislature thereof, is denied to any of the male inhabitants of such State, being twenty-one years of age, and citizens of the United States, or in any way abridged, except for participation in rebellion, or other crime, the basis of representation therein shall be reduced in the proportion which the number of such male citizens shall bear to the whole number of male citizens twenty-one years of age in such State.
@@ -645,18 +695,21 @@ Section 5. The Congress shall have power to enforce, by appropriate legislation,
       {
         name: "Brown v. Board of Education",
         year: 1954,
+        topic: "Equal Protection",
         holding: "State-mandated racial segregation in public schools violates equal protection.",
         citation: "347 U.S. 483"
       },
       {
         name: "Loving v. Virginia",
         year: 1967,
+        topic: "Marriage Equality",
         holding: "Bans on interracial marriage violate equal protection and due process.",
         citation: "388 U.S. 1"
       },
       {
         name: "Obergefell v. Hodges",
         year: 2015,
+        topic: "Marriage Equality",
         holding: "Same-sex couples have a fundamental right to marry under the Fourteenth Amendment.",
         citation: "576 U.S. 644"
       }
@@ -668,6 +721,7 @@ Section 5. The Congress shall have power to enforce, by appropriate legislation,
     title: "Voting rights and racial equality",
     provision: "Fifteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of race, color, or previous condition of servitude.
 
 Section 2. The Congress shall have power to enforce this article by appropriate legislation.`,
@@ -677,6 +731,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
       {
         name: "Shelby County v. Holder",
         year: 2013,
+        topic: "Voting Rights Act",
         holding: "Invalidated the coverage formula for preclearance under the Voting Rights Act.",
         citation: "570 U.S. 529"
       }
@@ -688,6 +743,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
     title: "Income taxes",
     provision: "Sixteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The Congress shall have power to lay and collect taxes on incomes, from whatever source derived, without apportionment among the several States, and without regard to any census or enumeration.`,
     summary: "Authorizes Congress to levy an income tax without apportionment among the states.",
     guarantees: ["Income taxes may be collected without apportionment."],
@@ -699,6 +755,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
     title: "Direct election of Senators",
     provision: "Seventeenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The Senate of the United States shall be composed of two Senators from each State, elected by the people thereof, for six years; and each Senator shall have one vote. The electors in each State shall have the qualifications requisite for electors of the most numerous branch of the State legislatures.
 
 When vacancies happen in the representation of any State in the Senate, the executive authority of such State shall issue writs of election to fill such vacancies: Provided, That the legislature of any State may empower the executive thereof to make temporary appointments until the people fill the vacancies by election as the legislature may direct.
@@ -714,6 +771,7 @@ This amendment shall not be so construed as to affect the election or term of an
     title: "Prohibition of alcohol (repealed)",
     provision: "Eighteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. After one year from the ratification of this article the manufacture, sale, or transportation of intoxicating liquors within, the importation thereof into, or the exportation thereof from the United States and all territory subject to the jurisdiction thereof for beverage purposes is hereby prohibited.
 
 Section 2. The Congress and the several States shall have concurrent power to enforce this article by appropriate legislation.
@@ -729,6 +787,7 @@ Section 3. This article shall be inoperative unless it shall have been ratified 
     title: "Voting rights and sex equality",
     provision: "Nineteenth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of sex.
 
 Congress shall have power to enforce this article by appropriate legislation.`,
@@ -742,6 +801,7 @@ Congress shall have power to enforce this article by appropriate legislation.`,
     title: "Terms of the President, Vice President, and Congress",
     provision: "Twentieth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The terms of the President and Vice President shall end at noon on the 20th day of January, and the terms of Senators and Representatives at noon on the 3d day of January, of the years in which such terms would have ended if this article had not been ratified; and the terms of their successors shall then begin.
 
 Section 2. The Congress shall assemble at least once in every year, and such meeting shall begin at noon on the 3d day of January, unless they shall by law appoint a different day.
@@ -763,6 +823,7 @@ Section 6. This article shall be inoperative unless it shall have been ratified 
     title: "Repeal of prohibition",
     provision: "Twenty-First Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The eighteenth article of amendment to the Constitution of the United States is hereby repealed.
 
 Section 2. The transportation or importation into any State, Territory, or possession of the United States for delivery or use therein of intoxicating liquors, in violation of the laws thereof, is hereby prohibited.
@@ -778,6 +839,7 @@ Section 3. This article shall be inoperative unless it shall have been ratified 
     title: "Presidential term limits",
     provision: "Twenty-Second Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. No person shall be elected to the office of the President more than twice, and no person who has held the office of President, or acted as President, for more than two years of a term to which some other person was elected President shall be elected to the office of President more than once. But this Article shall not apply to any person holding the office of President when this Article was proposed by the Congress, and shall not prevent any person who may be holding the office of President, or acting as President, during the term within which this Article becomes operative from holding the office of President or acting as President during the remainder of such term.
 
 Section 2. This article shall be inoperative unless it shall have been ratified as an amendment to the Constitution by the legislatures of three-fourths of the several States within seven years from the date of its submission to the States by the Congress.`,
@@ -791,6 +853,7 @@ Section 2. This article shall be inoperative unless it shall have been ratified 
     title: "Electoral votes for the District of Columbia",
     provision: "Twenty-Third Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The District constituting the seat of Government of the United States shall appoint in such manner as the Congress may direct:
 
 A number of electors of President and Vice President equal to the whole number of Senators and Representatives in Congress to which the District would be entitled if it were a State, but in no event more than the least populous State; they shall be in addition to those appointed by the States, but they shall be considered, for the purposes of the election of President and Vice President, to be electors appointed by a State; and they shall meet in the District and perform such duties as provided by the twelfth article of amendment.
@@ -806,6 +869,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
     title: "Voting rights and poll tax bans",
     provision: "Twenty-Fourth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The right of citizens of the United States to vote in any primary or other election for President or Vice President, for electors for President or Vice President, or for Senator or Representative in Congress, shall not be denied or abridged by the United States or any State by reason of failure to pay any poll tax or other tax.
 
 Section 2. The Congress shall have power to enforce this article by appropriate legislation.`,
@@ -815,6 +879,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
       {
         name: "Harper v. Virginia Board of Elections",
         year: 1966,
+        topic: "Poll Tax",
         holding: "Poll taxes in state elections violate equal protection.",
         citation: "383 U.S. 663"
       }
@@ -826,6 +891,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
     title: "Presidential succession",
     provision: "Twenty-Fifth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. In case of the removal of the President from office or of his death or resignation, the Vice President shall become President.
 
 Section 2. Whenever there is a vacancy in the office of the Vice President, the President shall nominate a Vice President who shall take office upon confirmation by a majority vote of both Houses of Congress.
@@ -845,6 +911,7 @@ Thereafter, when the President transmits to the President pro tempore of the Sen
     title: "Voting rights and youth enfranchisement",
     provision: "Twenty-Sixth Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `Section 1. The right of citizens of the United States, who are eighteen years of age or older, to vote shall not be denied or abridged by the United States or by any State on account of age.
 
 Section 2. The Congress shall have power to enforce this article by appropriate legislation.`,
@@ -858,6 +925,7 @@ Section 2. The Congress shall have power to enforce this article by appropriate 
     title: "Congressional pay changes",
     provision: "Twenty-Seventh Amendment",
     category: "rights",
+    type: "amendment",
     fullText: `No law, varying the compensation for the services of the Senators and Representatives, shall take effect, until an election of Representatives shall have intervened.`,
     summary: "Delays congressional pay changes until after the next election.",
     guarantees: ["Compensation changes for members of Congress require an intervening election."],

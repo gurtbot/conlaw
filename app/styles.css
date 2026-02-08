@@ -265,6 +265,29 @@ main {
   gap: 0.75rem;
 }
 
+.provision-directory {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.provision-directory h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+}
+
+.provision-directory ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.provision-directory a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .site-footer__links {
   display: flex;
   flex-wrap: wrap;
@@ -272,6 +295,59 @@ main {
 }
 
 .site-footer__links a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.case-search {
+  margin-bottom: 2rem;
+}
+
+.case-search input {
+  width: min(520px, 100%);
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+.case-directory {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.case-directory details {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.case-directory summary {
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+.case-topic {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--red);
+}
+
+.case-topic summary {
+  font-weight: 600;
+}
+
+.case-topic ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.case-topic a {
   color: var(--red);
   font-weight: 600;
   text-decoration: none;

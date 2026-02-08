@@ -2,6 +2,8 @@ const detailContainer = document.getElementById("provisionDetail");
 const provisionId = document.body.dataset.provisionId;
 const titleText = document.getElementById("provisionTitle");
 const kickerText = document.getElementById("provisionKicker");
+const directoryTitle = document.getElementById("provisionDirectoryTitle");
+const directoryList = document.getElementById("provisionDirectory");
 
 const provision = provisions.find((item) => item.id === provisionId);
 
@@ -52,4 +54,15 @@ if (!provision) {
       </div>
     </article>
   `;
+
+  if (directoryTitle && directoryList) {
+    const isAmendment = provision.type === "amendment";
+    const directoryType = isAmendment ? "amendment" : "article";
+    const headingLabel = isAmendment ? "Other Amendments" : "Other Articles";
+    const directoryItems = provisions.filter((item) => item.type === directoryType && item.id !== provision.id);
+    directoryTitle.textContent = headingLabel;
+    directoryList.innerHTML = directoryItems
+      .map((item) => `<li><a href="../${item.path}">${item.provision}</a></li>`)
+      .join("");
+  }
 }
