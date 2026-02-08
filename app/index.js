@@ -22,7 +22,8 @@ const renderSearchResults = (query) => {
     return (
       item.title.toLowerCase().includes(normalizedQuery) ||
       item.provision.toLowerCase().includes(normalizedQuery) ||
-      item.summary.toLowerCase().includes(normalizedQuery)
+      item.summary.toLowerCase().includes(normalizedQuery) ||
+      item.fullText.toLowerCase().includes(normalizedQuery)
     );
   });
 

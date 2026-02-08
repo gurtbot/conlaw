@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Governmental Structure | Constitutional Rights Explorer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Constitutional Provision | Constitutional Rights Explorer</title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,25 +12,25 @@
       rel="stylesheet"
     />
   </head>
-  <body data-page="structure">
+  <body data-provision-id="sixteenth-amendment">
     <header class="hero hero--compact">
       <div class="hero__content">
-        <p class="hero__kicker">Governmental Structure</p>
-        <h1>Constitutional sections that establish the federal government.</h1>
-        <p class="hero__subhead">Browse Articles and clauses that define Congress, the Presidency, the Judiciary, and federalism.</p>
-        <a class="hero__link" href="index.html">Return to homepage</a>
+        <p id="provisionKicker" class="hero__kicker">Constitutional Provision</p>
+        <h1 id="provisionTitle">Provision details</h1>
+        <p class="hero__subhead">Read the summary, guarantees, and key Supreme Court interpretations.</p>
+        <a class="hero__link" href="../index.html">Return to homepage</a>
       </div>
     </header>
 
     <main>
-      <section id="listContainer" class="rights-grid"></section>
+      <section id="provisionDetail" class="rights-grid"></section>
     </main>
 
     <footer class="site-footer">
       <div class="site-footer__links">
-        <a href="governmental-structure.html">Sections</a>
-        <a href="guaranteed-rights.html">Amendments</a>
-        <a href="helpful-caselaw.html">Caselaw</a>
+        <a href="../governmental-structure.html">Sections</a>
+        <a href="../guaranteed-rights.html">Amendments</a>
+        <a href="../helpful-caselaw.html">Caselaw</a>
       </div>
       <p>
         Built as a learning tool. Summaries are informational and not legal advice. Always consult full case texts and updated
@@ -38,7 +38,7 @@
       </p>
     </footer>
 
-    <script src="data.js"></script>
-    <script src="list.js"></script>
+    <script src="../data.js"></script>
+    <script src="../provision.js"></script>
   </body>
 </html>

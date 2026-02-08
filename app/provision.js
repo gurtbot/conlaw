@@ -33,6 +33,10 @@ if (!provision) {
         <p class="right-card__provision">${provision.provision}</p>
         <h2>${provision.title}</h2>
       </div>
+      <div class="right-card__section">
+        <h3>Exact text</h3>
+        <p class="provision-text">${provision.fullText}</p>
+      </div>
       <p class="right-card__summary">${provision.summary}</p>
       <div class="right-card__section">
         <h3>What it guarantees</h3>

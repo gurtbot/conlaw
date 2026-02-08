@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --navy: #1f2a44;
-  --blue: #1d4ed8;
-  --sky: #e0f2fe;
-  --cream: #f8f5f0;
-  --stone: #475569;
-  --charcoal: #0f172a;
+  --navy: #0a3161;
+  --blue: #0a3161;
+  --red: #b31942;
+  --cream: #ffffff;
+  --stone: #0a3161;
+  --charcoal: #0a3161;
   --white: #ffffff;
-  --border: #d7d2c7;
-  --shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  --border: #0a3161;
+  --shadow: 0 20px 40px rgba(10, 49, 97, 0.15);
 }
 
 * {
@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(120deg, rgba(29, 78, 216, 0.12), rgba(15, 23, 42, 0.05)),
+  background: linear-gradient(120deg, rgba(10, 49, 97, 0.25), rgba(179, 25, 66, 0.18)),
     url("https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1400&q=80") center/cover;
   color: var(--white);
   padding: 4.5rem 6vw 3.5rem;
@@ -88,7 +88,7 @@ h1 {
 .hero__actions button {
   border-radius: 999px;
   border: none;
-  background: var(--blue);
+  background: var(--red);
   color: var(--white);
   padding: 0.85rem 1.6rem;
   font-weight: 600;
@@ -99,6 +99,11 @@ h1 {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+}
+
+.hero__stat-link {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .hero__stats span {
@@ -178,7 +183,7 @@ main {
 }
 
 .category-card__link {
-  color: var(--blue);
+  color: var(--red);
   font-weight: 600;
 }
 
@@ -223,7 +228,7 @@ main {
 
 .right-card__provision {
   font-weight: 700;
-  color: var(--blue);
+  color: var(--red);
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.08rem;
@@ -240,7 +245,34 @@ main {
 }
 
 .right-card__link {
-  color: var(--blue);
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.provision-text {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+  color: var(--charcoal);
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer__links a {
+  color: var(--red);
   font-weight: 600;
   text-decoration: none;
 }

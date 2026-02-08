@@ -8,7 +8,7 @@ const createProvisionCard = (item) => `
       <h2>${item.title}</h2>
     </div>
     <p class="right-card__summary">${item.summary}</p>
-    <a class="right-card__link" href="${item.path}">Read this section</a>
+    <a class="right-card__link" href="${item.path}">${item.category === "rights" ? "Read this amendment" : "Read this section"}</a>
   </article>
 `;
 
