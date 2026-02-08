@@ -16,35 +16,57 @@
     <header class="hero">
       <div class="hero__content">
         <p class="hero__kicker">Constitutional Rights, Clearly Explained</p>
-        <h1>Start with the Preamble, then explore the rights and structure that shape U.S. law today.</h1>
+        <h1>
+          We the People of the United States, in Order to form a more perfect Union. . . do ordain and establish this Constitution for
+          the United States of America.
+        </h1>
         <p class="hero__subhead">
-          Browse constitutional guarantees in order, read plain-language summaries, and see the landmark Supreme Court rulings that
-          define how those provisions are applied.
+          Search for a constitutional section or amendment, then follow the links to dedicated pages with summaries, guarantees, and
+          landmark Supreme Court cases.
         </p>
         <div class="hero__actions">
-          <input id="searchInput" type="search" placeholder="Search provisions, amendments, or cases" aria-label="Search rights" />
+          <input id="searchInput" type="search" placeholder="Search sections, amendments, or cases" aria-label="Search provisions" />
           <button id="clearSearch" type="button">Clear</button>
         </div>
         <div class="hero__stats">
           <div>
             <span id="structureCount">0</span>
-            <p>Governmental structure entries</p>
+            <p>Governmental structure sections</p>
           </div>
           <div>
             <span id="rightsCount">0</span>
-            <p>Constitutional rights entries</p>
+            <p>Guaranteed rights amendments</p>
+          </div>
+          <div>
+            <span id="caseCount">0</span>
+            <p>Helpful caselaw summaries</p>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="filters" aria-label="Rights filters">
-        <button class="filter-button is-active" data-filter="structure">Governmental structure</button>
-        <button class="filter-button" data-filter="rights">Constitutional rights</button>
+      <section class="search-results" aria-live="polite">
+        <div id="searchResults" class="search-results__content"></div>
       </section>
 
-      <section id="rightsGrid" class="rights-grid" aria-live="polite"></section>
+      <section class="category-grid" aria-label="Explore categories">
+        <a class="category-card" href="governmental-structure.html">
+          <h2>Governmental Structure</h2>
+          <p>Explore the Articles and clauses that establish Congress, the Presidency, the Judiciary, and federalism.</p>
+          <span class="category-card__link">Browse structure sections</span>
+        </a>
+        <a class="category-card" href="guaranteed-rights.html">
+          <h2>Guaranteed Rights</h2>
+          <p>Review the Bill of Rights and later amendments that secure liberties and equal protection.</p>
+          <span class="category-card__link">Browse rights amendments</span>
+        </a>
+        <a class="category-card" href="helpful-caselaw.html">
+          <h2>Helpful Caselaw</h2>
+          <p>See the Supreme Court decisions that most often define how constitutional provisions are applied.</p>
+          <span class="category-card__link">Browse caselaw index</span>
+        </a>
+      </section>
     </main>
 
     <footer>
@@ -54,6 +76,7 @@
       </p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

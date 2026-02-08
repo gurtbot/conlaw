@@ -1,4 +1,4 @@
-const rightsData = [
+const provisions = [
   {
     id: "preamble",
     title: "Preamble",
@@ -10,7 +10,8 @@ const rightsData = [
       "Explains the Constitution's goals and foundational principles.",
       "Frames the authority of the Constitution as coming from the people."
     ],
-    cases: []
+    cases: [],
+    path: "provisions/preamble.html"
   },
   {
     id: "article-i",
@@ -42,7 +43,8 @@ const rightsData = [
         holding: "Congress cannot compel individuals to engage in commerce under the Commerce Clause.",
         citation: "567 U.S. 519"
       }
-    ]
+    ],
+    path: "provisions/article-i.html"
   },
   {
     id: "article-ii",
@@ -68,7 +70,8 @@ const rightsData = [
         holding: "Executive privilege is limited and cannot block a criminal subpoena.",
         citation: "418 U.S. 683"
       }
-    ]
+    ],
+    path: "provisions/article-ii.html"
   },
   {
     id: "article-iii",
@@ -94,7 +97,8 @@ const rightsData = [
         holding: "States are bound by Supreme Court decisions interpreting the Constitution.",
         citation: "358 U.S. 1"
       }
-    ]
+    ],
+    path: "provisions/article-iii.html"
   },
   {
     id: "article-iv",
@@ -114,15 +118,15 @@ const rightsData = [
         holding: "States cannot restrict welfare benefits based on how long a person has lived in the state.",
         citation: "526 U.S. 489"
       }
-    ]
+    ],
+    path: "provisions/article-iv.html"
   },
   {
     id: "article-v",
     title: "Amendment process",
     provision: "Article V",
     category: "structure",
-    summary:
-      "Defines how the Constitution can be amended by Congress and the states.",
+    summary: "Defines how the Constitution can be amended by Congress and the states.",
     guarantees: [
       "Amendments require supermajority approval by Congress and the states.",
       "States can propose amendments through a convention process."
@@ -134,7 +138,8 @@ const rightsData = [
         holding: "Questions about the timeliness of ratification are largely political, not judicial.",
         citation: "307 U.S. 433"
       }
-    ]
+    ],
+    path: "provisions/article-v.html"
   },
   {
     id: "article-vi",
@@ -154,7 +159,8 @@ const rightsData = [
         holding: "States cannot impede valid federal law through taxation.",
         citation: "17 U.S. (4 Wheat.) 316"
       }
-    ]
+    ],
+    path: "provisions/article-vi.html"
   },
   {
     id: "article-vii",
@@ -163,7 +169,8 @@ const rightsData = [
     category: "structure",
     summary: "Explains how the Constitution would take effect after ratification by the states.",
     guarantees: ["Requires approval by nine states to establish the Constitution."],
-    cases: []
+    cases: [],
+    path: "provisions/article-vii.html"
   },
   {
     id: "first-amendment",
@@ -196,15 +203,15 @@ const rightsData = [
         holding: "Students do not shed constitutional rights at the schoolhouse gate absent material disruption.",
         citation: "393 U.S. 503"
       }
-    ]
+    ],
+    path: "provisions/first-amendment.html"
   },
   {
     id: "second-amendment",
     title: "Right to keep and bear arms",
     provision: "Second Amendment",
     category: "rights",
-    summary:
-      "Protects an individual right to possess firearms for lawful purposes such as self-defense, while allowing some regulation.",
+    summary: "Protects an individual right to possess firearms for lawful purposes such as self-defense, while allowing some regulation.",
     guarantees: [
       "Individuals have a right to keep firearms in the home for self-defense.",
       "The right is not unlimited; certain longstanding regulations remain permissible."
@@ -222,15 +229,15 @@ const rightsData = [
         holding: "Applied the Second Amendment to state and local governments through the Fourteenth Amendment.",
         citation: "561 U.S. 742"
       }
-    ]
+    ],
+    path: "provisions/second-amendment.html"
   },
   {
     id: "third-amendment",
     title: "Quartering of soldiers",
     provision: "Third Amendment",
     category: "rights",
-    summary:
-      "Prohibits the government from forcing people to house soldiers in private homes during peacetime without consent.",
+    summary: "Prohibits the government from forcing people to house soldiers in private homes during peacetime without consent.",
     guarantees: ["Soldiers cannot be quartered in private homes without consent during peacetime."],
     cases: [
       {
@@ -239,15 +246,15 @@ const rightsData = [
         holding: "The Third Amendment applies to states through the Fourteenth Amendment.",
         citation: "677 F.2d 957"
       }
-    ]
+    ],
+    path: "provisions/third-amendment.html"
   },
   {
     id: "fourth-amendment",
     title: "Protection against unreasonable searches and seizures",
     provision: "Fourth Amendment",
     category: "rights",
-    summary:
-      "Requires government to justify searches and seizures, often with a warrant supported by probable cause.",
+    summary: "Requires government to justify searches and seizures, often with a warrant supported by probable cause.",
     guarantees: [
       "People have a right to be secure in their persons, houses, papers, and effects.",
       "Warrants must be particularized and based on probable cause."
@@ -271,15 +278,15 @@ const rightsData = [
         holding: "Accessing historical cell-site location data generally requires a warrant.",
         citation: "585 U.S. 296"
       }
-    ]
+    ],
+    path: "provisions/fourth-amendment.html"
   },
   {
     id: "fifth-amendment",
     title: "Due process, self-incrimination, and just compensation",
     provision: "Fifth Amendment",
     category: "rights",
-    summary:
-      "Guarantees procedural protections in criminal cases, including the right to remain silent and the requirement of due process.",
+    summary: "Guarantees procedural protections in criminal cases, including the right to remain silent and the requirement of due process.",
     guarantees: [
       "No person can be compelled to be a witness against themselves in criminal cases.",
       "Government must provide due process before depriving someone of life, liberty, or property.",
@@ -298,7 +305,8 @@ const rightsData = [
         holding: "Economic development can qualify as a public use under the Takings Clause.",
         citation: "545 U.S. 469"
       }
-    ]
+    ],
+    path: "provisions/fifth-amendment.html"
   },
   {
     id: "sixth-amendment",
@@ -325,15 +333,15 @@ const rightsData = [
         holding: "Testimonial statements are inadmissible unless the witness is unavailable and the defendant had a prior opportunity to cross-examine.",
         citation: "541 U.S. 36"
       }
-    ]
+    ],
+    path: "provisions/sixth-amendment.html"
   },
   {
     id: "seventh-amendment",
     title: "Civil jury trials",
     provision: "Seventh Amendment",
     category: "rights",
-    summary:
-      "Preserves the right to a jury trial in certain civil cases and limits reexamination of facts found by a jury.",
+    summary: "Preserves the right to a jury trial in certain civil cases and limits reexamination of facts found by a jury.",
     guarantees: ["Civil litigants retain the right to a jury trial in suits at common law."],
     cases: [
       {
@@ -342,19 +350,16 @@ const rightsData = [
         holding: "Defendants are entitled to a jury trial on liability in suits seeking civil penalties.",
         citation: "481 U.S. 412"
       }
-    ]
+    ],
+    path: "provisions/seventh-amendment.html"
   },
   {
     id: "eighth-amendment",
     title: "Protection against cruel and unusual punishment",
     provision: "Eighth Amendment",
     category: "rights",
-    summary:
-      "Limits the severity of criminal punishment, prohibiting cruel and unusual punishment and excessive bail or fines.",
-    guarantees: [
-      "Punishment must be proportionate to the offense.",
-      "Bail and fines cannot be excessive."
-    ],
+    summary: "Limits the severity of criminal punishment, prohibiting cruel and unusual punishment and excessive bail or fines.",
+    guarantees: ["Punishment must be proportionate to the offense.", "Bail and fines cannot be excessive."],
     cases: [
       {
         name: "Furman v. Georgia",
@@ -368,15 +373,15 @@ const rightsData = [
         holding: "Mandatory life without parole for juveniles is unconstitutional.",
         citation: "567 U.S. 460"
       }
-    ]
+    ],
+    path: "provisions/eighth-amendment.html"
   },
   {
     id: "ninth-amendment",
     title: "Unenumerated rights",
     provision: "Ninth Amendment",
     category: "rights",
-    summary:
-      "Clarifies that listing certain rights in the Constitution does not deny other rights retained by the people.",
+    summary: "Clarifies that listing certain rights in the Constitution does not deny other rights retained by the people.",
     guarantees: ["The people retain rights not expressly listed in the Constitution."],
     cases: [
       {
@@ -385,7 +390,8 @@ const rightsData = [
         holding: "Recognized privacy protections derived from the Bill of Rights.",
         citation: "381 U.S. 479"
       }
-    ]
+    ],
+    path: "provisions/ninth-amendment.html"
   },
   {
     id: "tenth-amendment",
@@ -401,15 +407,15 @@ const rightsData = [
         holding: "Congress cannot commandeer state officials to carry out federal law.",
         citation: "521 U.S. 898"
       }
-    ]
+    ],
+    path: "provisions/tenth-amendment.html"
   },
   {
     id: "fourteenth-amendment",
     title: "Equal protection and due process",
     provision: "Fourteenth Amendment",
     category: "rights",
-    summary:
-      "Requires states to provide equal protection of the laws and extends due process protections against state action.",
+    summary: "Requires states to provide equal protection of the laws and extends due process protections against state action.",
     guarantees: [
       "States must treat similarly situated people alike unless a sufficient justification exists.",
       "Fundamental rights are protected from state infringement."
@@ -433,135 +439,71 @@ const rightsData = [
         holding: "Same-sex couples have a fundamental right to marry under the Fourteenth Amendment.",
         citation: "576 U.S. 644"
       }
-    ]
+    ],
+    path: "provisions/fourteenth-amendment.html"
   },
   {
-    id: "voting-rights",
-    title: "Voting rights and democratic participation",
-    provision: "Fifteenth, Nineteenth, Twenty-Fourth, Twenty-Sixth Amendments",
+    id: "fifteenth-amendment",
+    title: "Voting rights and racial equality",
+    provision: "Fifteenth Amendment",
     category: "rights",
-    summary:
-      "Prohibits denying the right to vote based on race, sex, failure to pay poll taxes, or age for citizens 18 and older.",
-    guarantees: [
-      "Race, color, or previous condition of servitude cannot be used to deny the vote.",
-      "The right to vote cannot be denied on the basis of sex.",
-      "Poll taxes in federal elections are prohibited.",
-      "Citizens 18 and older cannot be denied the vote based on age."
-    ],
+    summary: "Prohibits denying the right to vote based on race, color, or previous condition of servitude.",
+    guarantees: ["Race, color, or previous condition of servitude cannot be used to deny the vote."],
     cases: [
       {
         name: "Shelby County v. Holder",
         year: 2013,
         holding: "Invalidated the coverage formula for preclearance under the Voting Rights Act.",
         citation: "570 U.S. 529"
-      },
+      }
+    ],
+    path: "provisions/fifteenth-amendment.html"
+  },
+  {
+    id: "nineteenth-amendment",
+    title: "Voting rights and sex equality",
+    provision: "Nineteenth Amendment",
+    category: "rights",
+    summary: "Prohibits denying the right to vote based on sex.",
+    guarantees: ["The right to vote cannot be denied on the basis of sex."],
+    cases: [],
+    path: "provisions/nineteenth-amendment.html"
+  },
+  {
+    id: "twenty-fourth-amendment",
+    title: "Voting rights and poll tax bans",
+    provision: "Twenty-Fourth Amendment",
+    category: "rights",
+    summary: "Bars poll taxes in federal elections.",
+    guarantees: ["Poll taxes in federal elections are prohibited."],
+    cases: [
       {
         name: "Harper v. Virginia Board of Elections",
         year: 1966,
         holding: "Poll taxes in state elections violate equal protection.",
         citation: "383 U.S. 663"
       }
-    ]
+    ],
+    path: "provisions/twenty-fourth-amendment.html"
+  },
+  {
+    id: "twenty-sixth-amendment",
+    title: "Voting rights and youth enfranchisement",
+    provision: "Twenty-Sixth Amendment",
+    category: "rights",
+    summary: "Prevents denying the vote to citizens 18 and older based on age.",
+    guarantees: ["Citizens 18 and older cannot be denied the vote based on age."],
+    cases: [],
+    path: "provisions/twenty-sixth-amendment.html"
   }
 ];
 
-const searchInput = document.getElementById("searchInput");
-const clearSearch = document.getElementById("clearSearch");
-const rightsGrid = document.getElementById("rightsGrid");
-const structureCount = document.getElementById("structureCount");
-const rightsCount = document.getElementById("rightsCount");
-const filterButtons = document.querySelectorAll(".filter-button");
-
-const state = {
-  filter: "structure",
-  query: ""
-};
-
-const countByCategory = (category) => rightsData.filter((right) => right.category === category).length;
-
-const createCaseList = (cases) =>
-  cases
-    .map(
-      (caseItem) => `
-        <li>
-          <h4>${caseItem.name} <span>(${caseItem.year})</span></h4>
-          <p>${caseItem.holding}</p>
-          <p class="case-citation">Citation: ${caseItem.citation}</p>
-        </li>
-      `
-    )
-    .join("");
-
-const createGuarantees = (guarantees) => guarantees.map((item) => `<li>${item}</li>`).join("");
-
-const renderRights = () => {
-  const normalizedQuery = state.query.trim().toLowerCase();
-  const filtered = rightsData.filter((right) => {
-    const matchesFilter = right.category === state.filter;
-    const matchesQuery =
-      normalizedQuery === "" ||
-      right.title.toLowerCase().includes(normalizedQuery) ||
-      right.provision.toLowerCase().includes(normalizedQuery) ||
-      right.summary.toLowerCase().includes(normalizedQuery) ||
-      right.cases.some((caseItem) => caseItem.name.toLowerCase().includes(normalizedQuery));
-    return matchesFilter && matchesQuery;
-  });
-
-  rightsGrid.innerHTML = filtered
-    .map(
-      (right) => `
-        <article class="right-card">
-          <div class="right-card__header">
-            <p class="right-card__provision">${right.provision}</p>
-            <h2>${right.title}</h2>
-          </div>
-          <p class="right-card__summary">${right.summary}</p>
-          <div class="right-card__section">
-            <h3>What it guarantees</h3>
-            <ul>
-              ${createGuarantees(right.guarantees)}
-            </ul>
-          </div>
-          <div class="right-card__section">
-            <h3>Key Supreme Court cases</h3>
-            <ol>
-              ${right.cases.length ? createCaseList(right.cases) : "<li>No landmark Supreme Court cases listed.</li>"}
-            </ol>
-          </div>
-        </article>
-      `
-    )
-    .join("");
-
-  if (filtered.length === 0) {
-    rightsGrid.innerHTML = `<div class="empty-state">No provisions matched your search. Try another keyword.</div>`;
-  }
-};
-
-const updateCounts = () => {
-  structureCount.textContent = countByCategory("structure");
-  rightsCount.textContent = countByCategory("rights");
-};
-
-searchInput.addEventListener("input", (event) => {
-  state.query = event.target.value;
-  renderRights();
-});
-
-clearSearch.addEventListener("click", () => {
-  state.query = "";
-  searchInput.value = "";
-  renderRights();
-});
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((btn) => btn.classList.remove("is-active"));
-    button.classList.add("is-active");
-    state.filter = button.dataset.filter;
-    renderRights();
-  });
-});
-
-updateCounts();
-renderRights();
+const getAllCases = () =>
+  provisions.flatMap((provision) =>
+    provision.cases.map((caseItem) => ({
+      ...caseItem,
+      provisionTitle: provision.title,
+      provisionLabel: provision.provision,
+      provisionPath: provision.path
+    }))
+  );
