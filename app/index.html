@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constitutional Rights Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__kicker">Constitutional Rights, Clearly Explained</p>
+        <h1>
+          We the People of the United States, in Order to form a more perfect Union. . . do ordain and establish this Constitution for
+          the United States of America.
+        </h1>
+        <p class="hero__subhead">
+          Search for a constitutional section or amendment, then follow the links to dedicated pages with summaries, guarantees, and
+          landmark Supreme Court cases.
+        </p>
+        <div class="hero__actions">
+          <input id="searchInput" type="search" placeholder="Search sections, amendments, or cases" aria-label="Search provisions" />
+          <button id="clearSearch" type="button">Clear</button>
+        </div>
+        <div class="hero__stats">
+          <a class="hero__stat-link" href="governmental-structure.html">
+            <span id="structureCount">0</span>
+            <p>Governmental structure sections</p>
+          </a>
+          <a class="hero__stat-link" href="guaranteed-rights.html">
+            <span id="rightsCount">0</span>
+            <p>Guaranteed rights amendments</p>
+          </a>
+          <a class="hero__stat-link" href="helpful-caselaw.html">
+            <span id="caseCount">0</span>
+            <p>Helpful caselaw summaries</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-results" aria-live="polite">
+        <div id="searchResults" class="search-results__content"></div>
+      </section>
+
+      <section class="category-grid" aria-label="Explore categories">
+        <a class="category-card" href="governmental-structure.html">
+          <h2>Governmental Structure</h2>
+          <p>Explore the Articles and clauses that establish Congress, the Presidency, the Judiciary, and federalism.</p>
+          <span class="category-card__link">Browse structure sections</span>
+        </a>
+        <a class="category-card" href="guaranteed-rights.html">
+          <h2>Guaranteed Rights</h2>
+          <p>Review the Bill of Rights and later amendments that secure liberties and equal protection.</p>
+          <span class="category-card__link">Browse rights amendments</span>
+        </a>
+        <a class="category-card" href="helpful-caselaw.html">
+          <h2>Helpful Caselaw</h2>
+          <p>See the Supreme Court decisions that most often define how constitutional provisions are applied.</p>
+          <span class="category-card__link">Browse caselaw index</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__links">
+        <a href="governmental-structure.html">Sections</a>
+        <a href="guaranteed-rights.html">Amendments</a>
+        <a href="helpful-caselaw.html">Caselaw</a>
+      </div>
+      <p>
+        Built as a learning tool. Summaries are informational and not legal advice. Always consult full case texts and updated
+        sources.
+      </p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
