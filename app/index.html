@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constitutional Rights Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__kicker">Constitutional Rights, Clearly Explained</p>
+        <h1>Understand what the Constitution guarantees—paired with the Supreme Court cases that define it.</h1>
+        <p class="hero__subhead">
+          Browse the most consequential rights, read plain-language summaries, and see the landmark Supreme Court rulings that
+          shape how those rights apply today.
+        </p>
+        <div class="hero__actions">
+          <input id="searchInput" type="search" placeholder="Search rights, amendments, or cases" aria-label="Search rights" />
+          <button id="clearSearch" type="button">Clear</button>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <span id="rightsCount">0</span>
+            <p>Core constitutional rights</p>
+          </div>
+          <div>
+            <span id="casesCount">0</span>
+            <p>Landmark Supreme Court cases</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="filters" aria-label="Rights filters">
+        <button class="filter-button is-active" data-filter="all">All rights</button>
+        <button class="filter-button" data-filter="freedom">Freedom & expression</button>
+        <button class="filter-button" data-filter="justice">Criminal justice</button>
+        <button class="filter-button" data-filter="privacy">Privacy & autonomy</button>
+        <button class="filter-button" data-filter="equality">Equality & voting</button>
+        <button class="filter-button" data-filter="structure">Federal structure</button>
+      </section>
+
+      <section id="rightsGrid" class="rights-grid" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <p>
+        Built as a learning tool. Summaries are informational and not legal advice. Always consult full case texts and updated
+        sources.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
